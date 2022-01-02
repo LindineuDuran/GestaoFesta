@@ -1,0 +1,1 @@
+docker run --detach --restart=always --env MYSQL_ROOT_PASSWORD=my-secret123 --env MYSQL_USER=user123 --env MYSQL_PASSWORD=my-secret123 --env MYSQL_DATABASE=festa --name party-mysql --publish 3306:3306 --volume party-mysqldb:/var/lib/mysql mysql:8.0
